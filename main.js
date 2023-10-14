@@ -22,4 +22,5 @@ function loadFooter() {
   };
 }
 
+
 loadHeader();
