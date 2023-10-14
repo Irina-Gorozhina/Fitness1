@@ -2,7 +2,10 @@
 <html>
     <head>
         <title>Contact</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+    
+        <script defer src="js/main.js"></script>
     </head>
     <body>
 
@@ -35,7 +38,7 @@
                 <label for="phone-input">Phone:</label>
                 <input type="text" name="phone-input" id="phone-input"
                     class="input-span"
-                    pattern="^[A-Z]{1}[a-zA-Z \-]+$">
+                    pattern="^d{11}+$">
                 <span class="error-text form-full-width">
                     Invalid name format - The fhone format should be 11 numbers
                 </span>

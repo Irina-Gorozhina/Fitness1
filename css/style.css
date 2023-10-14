@@ -361,4 +361,15 @@ label[for="message-input"] {
     margin-top: 20px;
 }
 
-
+@media screen and (max-width: 1024px) {
+    .home-section {
+        margin-left: 0;
+    }
+    .photo-team {
+        flex-direction: column;
+    }
+    .item {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
