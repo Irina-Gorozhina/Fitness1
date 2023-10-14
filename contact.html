@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div id="header-container"></div>
+        <!-- link header and footer -->
+        <div id="footer-container"></div>
+        
+        <section id="contact-page">
+            <h2>Message our team</h2>
+            <p>Thanks for visiting ML Strength - Health and Fitness! 
+                We're so excited to hear from you. Please complete the form below to send us a message.</p>
+
+            <form action="post" id="contact-form">
+                <label for="name-input">First name:</label>
+                <input type="text" name="name-input" id="name-input"
+                    class="input-span"
+                    pattern="^[A-Z]{1}[a-zA-Z \-]+$">
+                <span class="error-text form-full-width">
+                    Invalid name format - The name format should be...
+                </span>
+
+                <label for="name-input">Last name:</label>
+                <input type="text" name="name-input" id="name-input"
+                    class="input-span"
+                    pattern="^[A-Z]{1}[a-zA-Z \-]+$">
+                <span class="error-text form-full-width">
+                    Invalid name format - The name format should be...
+                </span>
+
+                <label for="phone-input">Phone:</label>
+                <input type="text" name="phone-input" id="phone-input"
+                    class="input-span"
+                    pattern="^[A-Z]{1}[a-zA-Z \-]+$">
+                <span class="error-text form-full-width">
+                    Invalid name format - The fhone format should be 11 numbers
+                </span>
+
+                <label for="email-input">Email:</label>
+                <input type="email" name="email-input"
+                    id="email-input" class="input-span">
+                <span class="error-text form-full-width">
+                    Invalid email format - The email format should
+                    be letters, numbers, @
+                </span>
+<h2>Your comment or question?</h2>
+                <label for="message-input">Message:</label>
+                <textarea id="message-input"
+                    class="form-full-width"></textarea>
+                <span class="error-text form-full-width">
+                    Invalid message format - The message format
+                    should
+                    be letters
+                </span>
+
+                <span id="help-button">Help</span>
+                <input type="reset" id="reset-button" value="Reset">
+                <input type="submit" id="send-button" value="Send">
+
+                <video id="help-video" class="form-full-width"
+                    src=""></video>
+            </form>
+        </section>
+    </body>
+</html>
