@@ -13,10 +13,12 @@
         <!-- link header and footer -->
         <div id="footer-container"></div>
         
-        <section id="contact-page">
-            <h2>Message our team</h2>
-            <p>Thanks for visiting ML Strength - Health and Fitness! 
-                We're so excited to hear from you. Please complete the form below to send us a message.</p>
+        <section id="membership-page">
+            <h2>Embrace Fitness with ML Strength Membership!</h2>
+            <img src="img/membership.jpg" alt="group people">
+
+            <p>Join ML Strength today and take the first step toward a healthier, more vibrant you.
+                 Embrace fitness, discover new possibilities, and experience the ML Strength difference.</p>
 
             <form action="post" id="contact-form">
                 <label for="name-input">First name:</label>
@@ -49,18 +51,35 @@
                 <span class="error-text form-full-width">
                     Invalid email format - The email format should be in the form of 'user@example.com'.
                 </span>
-                
-               <h2>Your comment or question?</h2>
-                <label for="message-input">Message:</label>
-                <textarea id="message-input"
-                    class="form-full-width"></textarea>
-               
-                <span id="help-button">Help</span>
-                <input type="reset" id="reset-button" value="Reset">
-                <input type="submit" id="send-button" value="Send">
 
-                <video id="help-video" class="form-full-width"
-                    src=""></video>
+                <label for="dob-input">Date of Birth:</label>
+                <input type="text" name="dob-input" id="dob-input"
+                class="input-span"
+                placeholder="YYYY-MM-DD" 
+                pattern="\d{4}-\d{2}-\d{2}">
+               <span class="error-text form-full-width">
+               Invalid date format - The date format should be YYYY-MM-DD
+               </span>
+
+               <label for="username-input">Username:</label>
+               <input type="text" name="username-input" id="username-input"
+               class="input-span"
+               maxlength="50" <!-- Limit the login length -->
+             <!-- Making the field mandatory -->
+            <span class="error-text form-full-width">
+            Please enter a valid username (max 50 characters).
+            </span>
+
+            <label for="password-input">Password:</label>
+            <input type="password" name="password-input" id="password-input"
+            class="input-span"
+            minlength="8" <!-- Set the minimum password length -->
+            <span class="error-text form-full-width">
+            Password must be at least 8 characters long.
+            </span>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+               
             </form>
         </section>
     </body>
