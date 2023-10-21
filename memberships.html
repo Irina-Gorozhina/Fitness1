@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, viewport-fit=cover" name="viewport">
+    
         <title>Contact</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
@@ -21,21 +25,23 @@
                  Embrace fitness, discover new possibilities, and experience the ML Strength difference.</p>
 
             <form action="post" id="contact-form">
-                <label for="name-input">First name:</label>
-                <input type="text" name="name-input" id="name-input"
-                    class="input-span"
-                    pattern="^[A-Z]{1}[a-zA-Z \-]+$">
-                <span class="error-text form-full-width">
-                    Invalid name format - The name format should be alphabetic and may include both uppercase and lowercase letters, as well as hyphens and spaces.
-                </span>
+                <label for="name-first-input">First name:</label>
+              
+            <input type="text" name="name-first-input" id="name-first-input"
+            class="input-span"
+            pattern="^[A-Z]{1}[a-zA-Z \-]+$">
+            <span class="error-text form-full-width">
+Invalid name format - The name format should be alphabetic and may include both uppercase and lowercase letters, as well as hyphens and spaces.
+            </span>
 
-                <label for="name-input">Last name:</label>
-                <input type="text" name="name-input" id="name-input"
-                    class="input-span"
-                    pattern="^[A-Z]{1}[a-zA-Z \-]+$">
-                <span class="error-text form-full-width">
-                    Invalid name format - The name format should be alphabetic and may include both uppercase and lowercase letters, as well as hyphens and spaces.
-                </span>
+            <label for="name-last-input">Last name:</label>
+            <input type="text" name="name-last-input" id="name-last-input"
+            class="input-span"
+            pattern="^[A-Z]{1}[a-zA-Z \-]+$">
+            <span class="error-text form-full-width">
+            Invalid name format - The name format should be alphabetic and may include both uppercase and lowercase letters, as well as hyphens and spaces.
+            </span>
+
 
                 <label for="phone-input">Phone:</label>
                 <input type="text" name="phone-input" id="phone-input"
@@ -61,22 +67,39 @@
                Invalid date format - The date format should be YYYY-MM-DD
                </span>
 
+               <label for="location-input">Select Location:</label>
+               <select name="location-input" id="location-input" class="input-span">
+                   <optgroup label="City location">
+                       <option value="SB">South Bank</option>
+                   </optgroup>
+               
+                   <optgroup label="North location">
+                       <option value="AG">Ashgrove</option>
+                       <option value="CH">Cheremside</option>
+                   </optgroup>
+               
+                   <optgroup label="South location">
+                       <option value="GV">Graceville</option>
+                       <option value="WL">Westlake</option>
+                   </optgroup>
+               </select>
+               
+
                <label for="username-input">Username:</label>
                <input type="text" name="username-input" id="username-input"
-               class="input-span"
-               maxlength="50" <!-- Limit the login length -->
-             <!-- Making the field mandatory -->
-            <span class="error-text form-full-width">
-            Please enter a valid username (max 50 characters).
-            </span>
+                class="input-span" maxlength="50">
+               <span class="error-text form-full-width">
+                Please enter a valid username (max 50 characters).
+                </span>
 
-            <label for="password-input">Password:</label>
-            <input type="password" name="password-input" id="password-input"
-            class="input-span"
-            minlength="8" <!-- Set the minimum password length -->
-            <span class="error-text form-full-width">
-            Password must be at least 8 characters long.
-            </span>
+                <label for="password-input">Password:</label>
+                <input type="password" name="password-input" id="password-input"
+                class="input-span"
+                minlength="8">
+                <span class="error-text form-full-width">
+                Password must be at least 8 characters long.
+                </span>
+
                 <button type="submit">Submit</button>
                 <button type="reset">Reset</button>
                

@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, viewport-fit=cover" name="viewport">
         <title>Contact</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
@@ -19,21 +22,17 @@
                 We're so excited to hear from you. Please complete the form below to send us a message.</p>
 
             <form action="post" id="contact-form">
-                <label for="name-input">First name:</label>
-                <input type="text" name="name-input" id="name-input"
-                    class="input-span"
-                    pattern="^[A-Z]{1}[a-zA-Z \-]+$">
-                <span class="error-text form-full-width">
-                    Invalid name format - The name format should be alphabetic and may include both uppercase and lowercase letters, as well as hyphens and spaces.
-                </span>
+                <label for="name-first-input">First name:</label>
+            <input type="text" name="name-first-input" id="name-first-input" class="input-span" pattern="^[A-Z]{1}[a-zA-Z \-]+$">
+            <span class="error-text form-full-width">
+            Invalid name format - The name format should be alphabetic and may include both uppercase and lowercase letters, as well as hyphens and spaces.
+            </span>
 
-                <label for="name-input">Last name:</label>
-                <input type="text" name="name-input" id="name-input"
-                    class="input-span"
-                    pattern="^[A-Z]{1}[a-zA-Z \-]+$">
-                <span class="error-text form-full-width">
-                    Invalid name format - The name format should be alphabetic and may include both uppercase and lowercase letters, as well as hyphens and spaces.
-                </span>
+            <label for="name-last-input">Last name:</label>
+            <input type="text" name="name-last-input" id="name-last-input" class="input-span" pattern="^[A-Z]{1}[a-zA-Z \-]+$">
+            <span class="error-text form-full-width">
+            Invalid name format - The name format should be alphabetic and may include both uppercase and lowercase letters, as well as hyphens and spaces.
+            </span> 
 
                 <label for="phone-input">Phone:</label>
                 <input type="text" name="phone-input" id="phone-input"
@@ -56,11 +55,14 @@
                     class="form-full-width"></textarea>
                
                 <span id="help-button">Help</span>
+                <script>
+                    document.getElementById("help-button").addEventListener("click", function() {
+                        alert("If you need assistance, please call us at 133 000");
+                    });
+                </script>
                 <input type="reset" id="reset-button" value="Reset">
                 <input type="submit" id="send-button" value="Send">
 
-                <video id="help-video" class="form-full-width"
-                    src=""></video>
             </form>
         </section>
     </body>
