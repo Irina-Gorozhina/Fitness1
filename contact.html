@@ -7,7 +7,7 @@
         <title>Contact</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
-    
+
         <script defer src="js/main.js"></script>
     </head>
     <body>
@@ -15,10 +15,10 @@
         <div id="header-container"></div>
         <!-- link header and footer -->
         <div id="footer-container"></div>
-        
+
         <section id="contact-page">
             <h2>Message our team</h2>
-            <p>Thanks for visiting ML Strength - Health and Fitness! 
+            <p>Thanks for visiting ML Strength - Health and Fitness!
                 We're so excited to hear from you. Please complete the form below to send us a message.</p>
 
             <form action="post" id="contact-form">
@@ -32,7 +32,7 @@
             <input type="text" name="name-last-input" id="name-last-input" class="input-span" pattern="^[A-Z]{1}[a-zA-Z \-]+$">
             <span class="error-text form-full-width">
             Invalid name format - The name format should be alphabetic and may include both uppercase and lowercase letters, as well as hyphens and spaces.
-            </span> 
+            </span>
 
                 <label for="phone-input">Phone:</label>
                 <input type="text" name="phone-input" id="phone-input"
@@ -48,21 +48,24 @@
                 <span class="error-text form-full-width">
                     Invalid email format - The email format should be in the form of 'user@example.com'.
                 </span>
-                
+
                <h2>Your comment or question?</h2>
                 <label for="message-input">Message:</label>
                 <textarea id="message-input"
                     class="form-full-width"></textarea>
-               
-                <span id="help-button">Help</span>
+
+
                 <script>
                     document.getElementById("help-button").addEventListener("click", function() {
                         alert("If you need assistance, please call us at 133 000");
                     });
                 </script>
-                <input type="reset" id="reset-button" value="Reset">
-                <input type="submit" id="send-button" value="Send">
 
+                <div>
+                    <span id="help-button">Help</span>
+                    <input type="reset" id="reset-button" value="Reset">
+                    <input type="submit" id="send-button" value="Send">
+                </div>
             </form>
         </section>
     </body>

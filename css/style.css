@@ -10,7 +10,7 @@ section {
  html {
     box-sizing: border-box;
 }
-/* Apply box-sizing: border-box to all elements, 
+/* Apply box-sizing: border-box to all elements,
 including before and after pseudo-elements */
 *,
 *::before,
@@ -66,12 +66,15 @@ body {
     z-index: 2;
     right: 10px;
     top: 10px;
+    border-radius: 0;
+    padding-left: 0;
 }
 
 
 /* Style the three spans within the burger button */
 .header__burger-btn span {
-    position: fixed;
+    position: relative;
+    display: block;
     width: 30px;
     height: 3px;
     background-color: black;
@@ -117,7 +120,7 @@ body {
     list-style-type: none;
     padding: 0;
     margin: 0;
-   
+
 }
 
 .menu__item:not(:last-child) {
@@ -132,7 +135,7 @@ body {
 }
 
 .menu__link:hover {
-    font-size: 40px; 
+    font-size: 40px;
 }
 
 @media (max-width: 992px) {
@@ -203,7 +206,7 @@ footer .footer-menu li a {
 }
 
 p {
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
  }
 
 .photo-team {
@@ -215,6 +218,7 @@ p {
   .item {
     width: 20%;
     margin-right: 20px;
+      margin: 0 auto;
   }
 
   .item img {
@@ -239,11 +243,11 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px; 
+    padding: 40px;
 }
 
 .about-us__left {
-    flex-basis: 45%; 
+    flex-basis: 45%;
 }
 
 .about-us__left p {
@@ -253,33 +257,37 @@ p {
 .about-us__left img {
     max-width: 60%;
     height: auto;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 .about-us__right {
-    flex-basis: 45%; 
+    flex-basis: 45%;
 }
 
 .about-us__right p {
-    font-size: 26px; 
+    font-size: 26px;
 }
 
 
 body, h2 {
     margin: 0;
     padding: 0;
-    
+
 }
 @media screen and (max-width: 992px) {
     .about-us {
         margin-left: 0;
         padding: 0 0 0 20px;
+        flex-direction: column;
+        gap: 30px;
     }
 }
-
+.book_classes {
+    margin: 30px 0;
+}
 /*Style for Classes*/
 .classes {
-    
+
     background-image: url('./../img/background_classes.jpg');
     display: flex;
     flex-direction: column;
@@ -291,6 +299,7 @@ body, h2 {
     color: aliceblue;
     background-size: cover;
     font-size: 22px;
+    background-position: center;
 }
 .video-title {
     font-size: 26px;
@@ -301,23 +310,23 @@ body, h2 {
 .classes-title {
     font-size: 36px;
     color: #333;
-    text-align: center; 
+    text-align: center;
 }
 
 .classes-subtitle {
     font-size: 18px;
     color: #666;
-    text-align: center; 
+    text-align: center;
 }
 
 .video-title {
     font-size: 26px;
-    color: #54abf1; 
+    color: #54abf1;
     text-align: center;
   }
 
 ul.services {
-    font-size: 22px; 
+    font-size: 22px;
     line-height: 2;
 }
 
@@ -346,16 +355,16 @@ button {
 }
 /*Style for header*/
 #membership-page img {
-    max-height: 600px; 
-    display: block; 
-    margin: 0 auto; 
+    max-height: 600px;
+    display: block;
+    margin: 0 auto;
 }
 
 #membership-page p {
-    font-size: 22px; 
+    font-size: 22px;
     color: #54abf1;
-    text-align: center; 
-    margin-top: 20px; 
+    text-align: center;
+    margin-top: 20px;
 }
 
  /* Style for Contact page*/
@@ -388,7 +397,7 @@ label[for="message-input"] {
     font-size: 18px; /* You can adjust the font size to your preference */
 }
 #message-input {
-    height: 150px; 
+    height: 150px;
     width: 500px;/* You can adjust the value to your preference */
 }
 .input-span {
@@ -426,7 +435,7 @@ label[for="message-input"] {
 }
 
 #help-button:hover {
-    background-color: #bc6cb4; 
+    background-color: #bc6cb4;
 }
 
 /* Style the reset and submit buttons */
@@ -453,7 +462,7 @@ label[for="message-input"] {
 }
 
 #send-button:hover, button[type="submit"]:hover {
-    background-color: #6494bc ; 
+    background-color: #6494bc ;
 }
 
 /* Add styles for reset and submit buttons that match the help button */
