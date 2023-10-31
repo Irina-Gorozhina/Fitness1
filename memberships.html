@@ -1,109 +1,74 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, viewport-fit=cover" name="viewport">
-    
-        <title>Contact</title>
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css">
-    
-        <script defer src="js/main.js"></script>
-    </head>
-    <body>
-
-        <div id="header-container"></div>
-        <!-- link header and footer -->
-        <div id="footer-container"></div>
-        
-        <section id="membership-page">
-            <h2>Embrace Fitness with ML Strength Membership!</h2>
-            <img src="img/membership.jpg" alt="group people">
-
-            <p>Join ML Strength today and take the first step toward a healthier, more vibrant you.
-                 Embrace fitness, discover new possibilities, and experience the ML Strength difference.</p>
-
-            <form action="post" id="contact-form">
-                <label for="name-first-input">First name:</label>
-              
-            <input type="text" name="name-first-input" id="name-first-input"
-            class="input-span"
-            pattern="^[A-Z]{1}[a-zA-Z \-]+$">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <div id="header-container"></div>
+    <div id="footer-container"></div>
+    <section id="membership-page">
+        <h2>Embrace Fitness with ML Strength Membership!</h2>
+        <img src="img/membership.jpg" alt="Group of people working out.">
+        <p>Join ML Strength today and take the first step toward a healthier, more vibrant you. Embrace fitness, discover new possibilities, and experience the ML Strength difference.</p>
+        <form action="post" id="contact-form">
+            <label for="name-first-input">First name:</label>
+            <input type="text" name="name-first-input" id="name-first-input" class="input-span" pattern="^[A-Z]{1}[a-zA-Z \-]+$">
             <span class="error-text form-full-width">
-Invalid name format - The name format should be alphabetic and may include both uppercase and lowercase letters, as well as hyphens and spaces.
+                Invalid name format - The name format should be alphabetic and may include both uppercase and lowercase letters, as well as hyphens and spaces.
             </span>
-
             <label for="name-last-input">Last name:</label>
-            <input type="text" name="name-last-input" id="name-last-input"
-            class="input-span"
-            pattern="^[A-Z]{1}[a-zA-Z \-]+$">
+            <input type="text" name="name-last-input" id="name-last-input" class="input-span" pattern="^[A-Z]{1}[a-zA-Z \-]+$">
             <span class="error-text form-full-width">
-            Invalid name format - The name format should be alphabetic and may include both uppercase and lowercase letters, as well as hyphens and spaces.
+                Invalid name format - The name format should be alphabetic and may include both uppercase and lowercase letters, as well as hyphens and spaces.
             </span>
-
-
-                <label for="phone-input">Phone:</label>
-                <input type="text" name="phone-input" id="phone-input"
-                    class="input-span"
-                    pattern="^d{11}+$">
-                <span class="error-text form-full-width">
-                    Invalid name format - The fhone format should be numeric and should consist of exactly 11 digits
-                </span>
-
-                <label for="email-input">Email:</label>
-                <input type="email" name="email-input"
-                    id="email-input" class="input-span">
-                <span class="error-text form-full-width">
-                    Invalid email format - The email format should be in the form of 'user@example.com'.
-                </span>
-
-                <label for="dob-input">Date of Birth:</label>
-                <input type="text" name="dob-input" id="dob-input"
-                class="input-span"
-                placeholder="YYYY-MM-DD" 
-                pattern="\d{4}-\d{2}-\d{2}">
-               <span class="error-text form-full-width">
-               Invalid date format - The date format should be YYYY-MM-DD
-               </span>
-
-               <label for="location-input">Select Location:</label>
-               <select name="location-input" id="location-input" class="input-span">
-                   <optgroup label="City location">
-                       <option value="SB">South Bank</option>
-                   </optgroup>
-               
-                   <optgroup label="North location">
-                       <option value="AG">Ashgrove</option>
-                       <option value="CH">Cheremside</option>
-                   </optgroup>
-               
-                   <optgroup label="South location">
-                       <option value="GV">Graceville</option>
-                       <option value="WL">Westlake</option>
-                   </optgroup>
-               </select>
-               
-
-               <label for="username-input">Username:</label>
-               <input type="text" name="username-input" id="username-input"
-                class="input-span" maxlength="50">
-               <span class="error-text form-full-width">
+            <label for="phone-input">Phone:</label>
+            <input type="text" name="phone-input" id="phone-input" class="input-span" pattern="^\d{11}+$">
+            <span class="error-text form-full-width">
+                Invalid phone format - The phone format should be numeric and should consist of exactly 11 digits.
+            </span>
+            <label for="email-input">Email:</label>
+            <input type="email" name="email-input" id="email-input" class="input-span">
+            <span class="error-text form-full-width">
+                Invalid email format - The email format should be in the form of 'user@example.com'.
+            </span>
+            <label for="dob-input">Date of Birth:</label>
+            <input type="text" name="dob-input" id="dob-input" class="input-span" placeholder="YYYY-MM-DD" pattern="\d{4}-\d{2}-\d{2}">
+            <span class="error-text form-full-width">
+                Invalid date format - The date format should be YYYY-MM-DD.
+            </span>
+            <label for="location-input">Select Location:</label>
+            <select name="location-input" id="location-input" class="input-span">
+                <optgroup label="City location">
+                    <option value="SB">South Bank</option>
+                </optgroup>
+                <optgroup label="North location">
+                    <option value="AG">Ashgrove</option>
+                    <option value="CH">Chermside</option>
+                </optgroup>
+                <optgroup label="South location">
+                    <option value="GV">Graceville</option>
+                    <option value="WL">Westlake</option>
+                </optgroup>
+            </select>
+            <label for="username-input">Username:</label>
+            <input type="text" name="username-input" id="username-input" class="input-span" maxlength="50">
+            <span class="error-text form-full-width">
                 Please enter a valid username (max 50 characters).
-                </span>
-
-                <label for="password-input">Password:</label>
-                <input type="password" name="password-input" id="password-input"
-                class="input-span"
-                minlength="8">
-                <span class="error-text form-full-width">
+            </span>
+            <label for="password-input">Password:</label>
+            <input type="password" name="password-input" id="password-input" class="input-span" minlength="8">
+            <span class="error-text form-full-width">
                 Password must be at least 8 characters long.
-                </span>
-
-                <button type="submit">Submit</button>
-                <button type="reset">Reset</button>
-               
-            </form>
-        </section>
-    </body>
+            </span>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </section>
+</body>
 </html>
