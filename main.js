@@ -22,5 +22,15 @@ function loadFooter() {
   };
 }
 
+document.getElementById("help-button").addEventListener("click", function() {
+  // По нажатию на кнопку Help, покажем видео
+  var video = document.getElementById("help-video");
+  video.style.display = "block";
+  // Затем начнем воспроизведение видео
+  video.play();
+  
+  // Добавим класс "clicked" к кнопке Help
+  this.classList.add("clicked");
+});
 
 loadHeader();
